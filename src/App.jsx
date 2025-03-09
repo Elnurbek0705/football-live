@@ -1,13 +1,12 @@
-import LeaguesList from "./components/leguesList/LeaguesList"
-import MatchesList from "./components/matches/MatchesList"
+import { ThemeProviderWrapper } from "./contexts/ThemeContext";
+import Layout from "./layout/Layout";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <MatchesList />
-      <LeaguesList />
-    </div>
-  )
+    <ThemeProviderWrapper>
+      <Layout />
+    </ThemeProviderWrapper>
+  );
 }
 
-export default App
+export default App;

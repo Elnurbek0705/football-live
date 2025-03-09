@@ -20,12 +20,12 @@ const LeaguesList = () => {
 
   return (
     <div>
-      <h2>Ligalar Ro‘yxati</h2>
-      <ul>
+      <h2>Legues</h2>
+      <ol>
         {leagues.map((league) => (
           <li key={league.id}>{league.name} ({league.area.name})</li>
         ))}
-      </ul>
+      </ol>
     </div>
   );
 };
